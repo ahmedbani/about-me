@@ -11,13 +11,16 @@ let answer;
 function checkTrue(a) {
     a = a.toLowerCase();
     if (a == 'yes' || a=='y') {
+        //console.log('correct');
         alert('correct');
-        console.log('correct');
     } else if (a == 'no' || a== 'n') {
+        //console.log('wrong');
         alert('wrong')
+        
     } else {
        
         while(a != 'yes' && a!='y' && a!='no' && a!='n'){
+            //console.log('please answer with yes/y or no/n');
             a=prompt('please answer with yes/y or no/n');
 
         }
@@ -27,29 +30,36 @@ function checkTrue(a) {
 }
 function checkFalse(a) {
     a = a.toLowerCase();
-    if (a == ('yes' || 'y')) {
+    if (a == 'yes' || a=='y') {
+        //console.log('wrong');
         alert('wrong');
-        console.log('wrong');
-    } else if (a == ('no' || 'n')) {
+    } else if (a == 'no' || a== 'n') {
+        //console.log('correct');
         alert('correct')
     } else {
-        alert('please answer with yes/y or no/n')
+        while(a != 'yes' && a!='y' && a!='no' && a!='n'){
+            //console.log('please answer with yes/y or no/n');
+            a=prompt('please answer with yes/y or no/n');
+
+        }
+        checkFalse(a);
     }
     return a;
 }
 answer = prompt('I was born in 1998 ?');
 checkTrue(answer);
-console.log('yes');
+//console.log('yes');
 answer = prompt('I\'ve studied civil engineering');
 checkFalse(answer);
-console.log('nah computer science');
+//console.log('nah computer science');
 answer = prompt('My favourite dish is makhshi?');
 checkTrue(answer);
-console.log('sure');
+//console.log('sure');
 answer = prompt('My dream car is slr mclaren');
 checkTrue(answer);
-console.log('hell yeah');
+//console.log('hell yeah');
 answer = prompt('I love apex legends ?');
 checkTrue(answer);
-console.log('oh yeah');
+//console.log('oh yeah');
+alert('hope you enjoyed my website '+ name)
 
