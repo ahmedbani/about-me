@@ -8,11 +8,13 @@ if (feeling) {
 }
 alert('lets play a guessing game');
 let answer;
+let score = 0;
 function checkTrue(a) {
     a = a.toLowerCase();
     if (a == 'yes' || a == 'y') {
         //console.log('correct');
         alert('correct');
+        score++;
     } else if (a == 'no' || a == 'n') {
         //console.log('wrong');
         alert('wrong')
@@ -36,6 +38,7 @@ function checkFalse(a) {
     } else if (a == 'no' || a == 'n') {
         //console.log('correct');
         alert('correct')
+        score++;
     } else {
         while (a != 'yes' && a != 'y' && a != 'no' && a != 'n') {
             //console.log('please answer with yes/y or no/n');
@@ -69,6 +72,7 @@ for (let i = 1; i <= 4; i++) {
     answer = prompt('guess a number between 0 and 20 ?')
     if (answer == 1) {
         alert('good job, you guessed from the ' + i + ' time');
+        score++;
         break;
     } else if (answer > 1) {
         alert('too high');
@@ -87,6 +91,7 @@ for (let i = 1; i <= 6; i++) {
         if (answer == countries[j]) {
             alert('correct');
             i = 7;
+            score++;
         }
     }
     if (i != 7) {
@@ -94,3 +99,4 @@ for (let i = 1; i <= 6; i++) {
     }
 }
 alert('the countries I\'ve visted are [ USA, KSA, TURKEY, OMAN, UAE, SYRIA ]');
+alert('your score is '+ score+ '/7');
