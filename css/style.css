@@ -1,0 +1,29 @@
+h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 32px;
+}
+body{
+    background-color: grey;
+}
+li{
+    color: blue;
+}
+h2{
+    font-weight: bold;
+    font-size: medium;
+}
+ol {
+    padding-left: 30px;
+    list-style-type: decimal;
+}
+ul{
+    padding-left: 10px;
+    list-style: inside;
+}
+p{
+    padding-left: 20px;
+}
+header p{
+    padding-left: 30px;
+}
