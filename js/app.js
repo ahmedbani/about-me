@@ -68,6 +68,7 @@ alert('hope you enjoyed my website ' + name)
 
 let number = 1;
 
+function question6(){
 for (let i = 1; i <= 4; i++) {
     answer = prompt('guess a number between 0 and 20 ?')
     if (answer == 1) {
@@ -83,7 +84,12 @@ for (let i = 1; i <= 4; i++) {
 if (answer != 1) {
     alert('the correct answer is 1');
 }
+}
+question6();
+
+
 let countries = ['USA', 'KSA', 'TURKEY', 'OMAN', 'UAE', 'SYRIA'];
+function question7(){
 for (let i = 1; i <= 6; i++) {
     answer = prompt('guess one of the countries I\'ve visited ?')
     answer = answer.toUpperCase();
@@ -98,5 +104,8 @@ for (let i = 1; i <= 6; i++) {
         alert('try again')
     }
 }
+}
+question7();
+
 alert('the countries I\'ve visted are [ USA, KSA, TURKEY, OMAN, UAE, SYRIA ]');
 alert('your score is '+ score+ '/7');
