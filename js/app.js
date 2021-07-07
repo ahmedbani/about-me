@@ -9,7 +9,7 @@ if (feeling) {
 alert('lets play a guessing game');
 let answer;
 let score = 0;
-function checkTrue(a) {
+function question1(a) {
     a = a.toLowerCase();
     if (a == 'yes' || a == 'y') {
         //console.log('correct');
@@ -26,11 +26,11 @@ function checkTrue(a) {
             a = prompt('please answer with yes/y or no/n');
 
         }
-        checkTrue(a);
+        question1(a);
     }
     return a;
 }
-function checkFalse(a) {
+function question2(a) {
     a = a.toLowerCase();
     if (a == 'yes' || a == 'y') {
         //console.log('wrong');
@@ -45,7 +45,7 @@ function checkFalse(a) {
             a = prompt('please answer with yes/y or no/n');
 
         }
-        checkFalse(a);
+        question2(a);
     }
     return a;
 }
