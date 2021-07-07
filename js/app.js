@@ -49,20 +49,86 @@ function question2(a) {
     }
     return a;
 }
+function question3(a) {
+    a = a.toLowerCase();
+    if (a == 'yes' || a == 'y') {
+        //console.log('correct');
+        alert('correct');
+        score++;
+    } else if (a == 'no' || a == 'n') {
+        //console.log('wrong');
+        alert('wrong')
+
+    } else {
+
+        while (a != 'yes' && a != 'y' && a != 'no' && a != 'n') {
+            //console.log('please answer with yes/y or no/n');
+            a = prompt('please answer with yes/y or no/n');
+
+        }
+        question3(a);
+    }
+    return a;
+}
+
+function question4(a) {
+    a = a.toLowerCase();
+    if (a == 'yes' || a == 'y') {
+        //console.log('correct');
+        alert('correct');
+        score++;
+    } else if (a == 'no' || a == 'n') {
+        //console.log('wrong');
+        alert('wrong')
+
+    } else {
+
+        while (a != 'yes' && a != 'y' && a != 'no' && a != 'n') {
+            //console.log('please answer with yes/y or no/n');
+            a = prompt('please answer with yes/y or no/n');
+
+        }
+        question4(a);
+    }
+    return a;
+}
+
+function question5(a) {
+    a = a.toLowerCase();
+    if (a == 'yes' || a == 'y') {
+        //console.log('correct');
+        alert('correct');
+        score++;
+    } else if (a == 'no' || a == 'n') {
+        //console.log('wrong');
+        alert('wrong')
+
+    } else {
+
+        while (a != 'yes' && a != 'y' && a != 'no' && a != 'n') {
+            //console.log('please answer with yes/y or no/n');
+            a = prompt('please answer with yes/y or no/n');
+
+        }
+        question5(a);
+    }
+    return a;
+}
+
 answer = prompt('I was born in 1998 ?');
-checkTrue(answer);
+question1(answer);
 //console.log('yes');
 answer = prompt('I\'ve studied civil engineering');
-checkFalse(answer);
+question2(answer);
 //console.log('nah computer science');
 answer = prompt('My favourite dish is makhshi?');
-checkTrue(answer);
+question3(answer);
 //console.log('sure');
 answer = prompt('My dream car is slr mclaren');
-checkTrue(answer);
+question4(answer);
 //console.log('hell yeah');
 answer = prompt('I love apex legends ?');
-checkTrue(answer);
+question5(answer);
 //console.log('oh yeah');
 alert('hope you enjoyed my website ' + name)
 
