@@ -9,7 +9,7 @@ if (feeling) {
 alert('lets play a guessing game');
 let answer;
 let score = 0;
-function checkTrue(a) {
+function question1(a) {
     a = a.toLowerCase();
     if (a == 'yes' || a == 'y') {
         //console.log('correct');
@@ -26,11 +26,11 @@ function checkTrue(a) {
             a = prompt('please answer with yes/y or no/n');
 
         }
-        checkTrue(a);
+        question1(a);
     }
     return a;
 }
-function checkFalse(a) {
+function question2(a) {
     a = a.toLowerCase();
     if (a == 'yes' || a == 'y') {
         //console.log('wrong');
@@ -45,15 +45,15 @@ function checkFalse(a) {
             a = prompt('please answer with yes/y or no/n');
 
         }
-        checkFalse(a);
+        question2(a);
     }
     return a;
 }
 answer = prompt('I was born in 1998 ?');
-checkTrue(answer);
+question1(answer);
 //console.log('yes');
 answer = prompt('I\'ve studied civil engineering');
-checkFalse(answer);
+question2(answer);
 //console.log('nah computer science');
 answer = prompt('My favourite dish is makhshi?');
 checkTrue(answer);
